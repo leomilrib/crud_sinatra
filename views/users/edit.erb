@@ -1,0 +1,21 @@
+<form action="/users/edit/<%= @user[:id] %>" method="post">
+  <table>
+    <tr>
+      <th>Name:</th>
+      <td><input type="text" id="user_name" name="user[name]" value="<%= @user[:name] %>" /></td>
+    </tr>
+    <tr>
+      <th>Login:</th>
+      <td><input type="text" id="user_login" name="user[login]" value="<%= @user[:login] %>" /></td>
+    </tr>
+    <tr>
+      <th>URL:</th>
+      <td><input type="text" id="user_url" name="user[url]" value="<%= @user[:url] %>" /></td>
+    </tr>
+    <tr>
+      <th>Password:</th>
+      <td><input type="password" id="user_password" name="user[password]" value="<%= @user[:password] %>" /></td>
+    </tr>
+  </table>
+  <input type="submit" value="Edit" />
+</form>

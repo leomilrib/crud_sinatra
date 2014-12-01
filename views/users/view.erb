@@ -1,0 +1,24 @@
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Login</th>
+    <th>URL</th>
+    <th colspan="2">Action</th>
+  </tr>
+  <tr>
+    <td><%= @user[:name] %></td>
+    <td><%= @user[:login] %></td>
+    <td><%= @user[:url] %></td>
+    <td><a href="/users/kill/<%= @user[:id] %>">Delete</a></td>
+    <td><a href="/users/edit/<%= @user[:id] %>">Edit</a></td>
+  </tr>
+</table>
+
+<ul>
+  <li>
+    <a href="/users/create">Create Another</a>
+  </li>
+  <li>
+    <a href="/">List</a>
+  </li>
+</ul>
