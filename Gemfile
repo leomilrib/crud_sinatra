@@ -12,3 +12,12 @@ gem 'sinatra-captcha'
 gem 'sqlite3'
 gem "tux"
 gem "rake"
+
+group :development do
+  gem 'sinatra-reloader'
+end
+
+group :test do
+  gem 'rspec'
+  gem 'capybara'
+end

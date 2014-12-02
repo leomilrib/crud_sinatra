@@ -1,21 +1,21 @@
 <form action="/users" method="post">
   <table>
     <tr>
-      <th>Name:</th>
+      <th><label for="user_name">Name:</label></th>
       <td><input type="text" id="user_name" name="user[name]" /></td>
     </tr>
     <tr>
-      <th>Login:</th>
+      <th><label for="user_login">Login:</label></th>
       <td><input type="text" id="user_login" name="user[login]" /></td>
     </tr>
     <tr>
-      <th>URL:</th>
+      <th><label for="user_url">URL:</label></th>
       <td><input type="text" id="user_url" name="user[url]" /></td>
     </tr>
     <tr>
-      <th>Password:</th>
+      <th><label for="user_password">Password:</label></th>
       <td><input type="password" id="user_password" name="user[password]" /></td>
     </tr>
   </table>
-  <input type="submit" values="Create" />
+  <input type="submit" value="Create" />
 </form>
